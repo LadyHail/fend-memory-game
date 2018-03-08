@@ -1,0 +1,24 @@
+.deck .card {
+    height: 48px;
+    width: 48px;
+    margin: 5px;
+  }
+
+.deck {
+    width: 265px;
+    min-height: auto;
+    padding: 5px;
+    margin: 0;
+  }
+
+.score-panel {
+  width: 75%;
+  max-width: 265px;
+  padding: 5px;
+  font-size: 0.85em;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.5em;
+}

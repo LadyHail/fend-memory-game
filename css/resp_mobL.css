@@ -1,0 +1,12 @@
+.deck .card {
+    height: 90px;
+    width: 90px;
+    margin: 10px;
+  }
+
+.deck {
+    width: 501px;
+    min-height: auto;
+    padding: 5px;
+    margin: 0;
+  }
