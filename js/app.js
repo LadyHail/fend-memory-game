@@ -118,9 +118,6 @@ function countStars() {
     else if (counter === 38) {
         stars[1].remove();
     }
-    else if (counter === 46) {
-        stars[0].remove();
-    }
 };
 
 /* Check if all cards are matched */
@@ -139,10 +136,13 @@ function isDone() {
 };
 
 function finish() {
-    const playAgain = window.confirm('Well done!\nMoves: ' + counter + '\nStars: ' + stars.length + '\nTime: ' + deltaTime() + ' seconds!\nDo you want to play again?');
-    if (playAgain) {
-        location = location;
-    }
+    setTimeout(function () {
+        const playAgain = window.confirm('Well done!\nMoves: ' + counter + '\nStars: ' + stars.length + '\nTime: ' + deltaTime() + ' seconds!\nDo you want to play again?');
+        if (playAgain) {
+            location = location;
+        }
+    }, 10);
+
 };
 
 /* Listen for 'click' on restart button */
